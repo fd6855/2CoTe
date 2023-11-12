@@ -7,7 +7,7 @@ idx = 0
 cost = 0
 
 for idx in range(N):
-  if B>C:
+  if B > C:
     if fac[idx + 1] > fac[idx + 2]:
       tmp = min(fac[idx], fac[idx + 1] - fac[idx + 2])
       cost += tmp * (B + C)
@@ -30,6 +30,6 @@ for idx in range(N):
       fac[idx + 1] -= tmp2
     cost += B * fac[idx]
   else:
-    cost+=fac[idx]*B  
-  
+    cost += fac[idx] * B
+
 print(cost)
